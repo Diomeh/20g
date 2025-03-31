@@ -13,9 +13,9 @@ Each game is independent and lives on its own repo as a git submodule.
 
 ## Games
 
-| # | Title | Genre | Description |
-|---|-------|-------|-------------|
-| 1 | TBD   | TBD   | TBD         |
+| # | Title        | Genre  | Description                                                                                                            |
+|---|--------------|--------|------------------------------------------------------------------------------------------------------------------------|
+| 1 | Flappy  Bird | Arcade | Side-scroller where the player controls a bird, attempting to fly between columns of green pipes without hitting them. |
 
 ## Monorepo management
 

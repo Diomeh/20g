@@ -1,0 +1,3 @@
+[submodule "games/flappy-bird"]
+	path = games/flappy-bird
+	url = git@github.com:Diomeh/flappy-bird.git
