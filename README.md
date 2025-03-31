@@ -17,6 +17,51 @@ Each game is independent and lives on its own repo as a git submodule.
 |---|-------|-------|-------------|
 | 1 | TBD   | TBD   | TBD         |
 
+## Monorepo management
+
+Cloning this whole project
+
+```bash
+git clone --recurse-submodules https://github.com/Diomeh/20g
+```
+
+***
+
+Adding a game as a submodule
+
+```bash
+git submodule add <repo-url> games/<name> 
+git submodule init
+git submodule update
+git add .gitmodules games/<name>
+git commit -m "feat: add game <name>"
+```
+
+***
+
+Updating monorepo
+
+```bash
+git submodule update --init --recursive
+```
+
+Or 
+
+```bash
+git submodule update --remote --merge
+```
+
+***
+
+Removing a game
+
+```bash
+git submodule deinit -f games/<name>
+rm -rf games/<name> .git/modules/games/<name>
+git rm -f games/<name>
+git commit -m "feat: remove game <name>"
+```
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
